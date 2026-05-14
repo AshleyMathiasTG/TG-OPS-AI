@@ -1,0 +1,38 @@
+{
+  "_comment": "Fixture data for TGAP_FIXTURE_ONLY=1 (offline dev mode). Mirrors the structure returned by the 4 operational SQL queries.",
+  "open_positions": [
+    {"req_id": "REQ001", "req_title": "Senior AI Engineer", "account_name": "Sephora", "status": "Active", "priority": "High", "recruiter_name": "Alice Chen", "aging_days": 18, "target_date": "2026-05-30"},
+    {"req_id": "REQ002", "req_title": "QA Lead", "account_name": "Penumbra", "status": "Hold", "priority": "Medium", "recruiter_name": "Bob Kumar", "aging_days": 32, "target_date": "2026-05-15"},
+    {"req_id": "REQ003", "req_title": "DevOps Engineer", "account_name": "MARVELL", "status": "Active", "priority": "Critical", "recruiter_name": "Carol Singh", "aging_days": 9, "target_date": "2026-05-25"},
+    {"req_id": "REQ004", "req_title": "Data Scientist", "account_name": "MARVELL", "status": "Active", "priority": "High", "recruiter_name": "Alice Chen", "aging_days": 14, "target_date": "2026-06-01"},
+    {"req_id": "REQ005", "req_title": "Frontend Developer", "account_name": "TechCorp", "status": "In Progress", "priority": "Low", "recruiter_name": "David Lee", "aging_days": 7, "target_date": "2026-06-10"},
+    {"req_id": "REQ006", "req_title": "ML Engineer", "account_name": "Sephora", "status": "Active", "priority": "High", "recruiter_name": "Alice Chen", "aging_days": 21, "target_date": "2026-05-20"},
+    {"req_id": "REQ007", "req_title": "Backend Engineer", "account_name": "Penumbra", "status": "Open", "priority": "Medium", "recruiter_name": "Bob Kumar", "aging_days": 45, "target_date": "2026-04-30"},
+    {"req_id": "REQ008", "req_title": "Cloud Architect", "account_name": "GlobalBank", "status": "Active", "priority": "Critical", "recruiter_name": "Eve Thomas", "aging_days": 6, "target_date": "2026-05-28"}
+  ],
+  "submissions_aging": [
+    {"submission_id": "SUB001", "req_id": "REQ001", "req_title": "Senior AI Engineer", "account_name": "Sephora", "candidate_name": "John Doe", "submission_status": "CAN - Interview No-show", "recruiter_name": "Alice Chen", "aging_days": 12, "billable": true, "requirement_deadline": "2026-05-30"},
+    {"submission_id": "SUB002", "req_id": "REQ002", "req_title": "QA Lead", "account_name": "Penumbra", "candidate_name": "Jane Smith", "submission_status": "TECH - Rejected after Phone Interview", "recruiter_name": "Bob Kumar", "aging_days": 28, "billable": true, "requirement_deadline": "2026-05-15"},
+    {"submission_id": "SUB003", "req_id": "REQ002", "req_title": "QA Lead", "account_name": "Penumbra", "candidate_name": "Mike Johnson", "submission_status": "QA - Candidate out of Budget", "recruiter_name": "Bob Kumar", "aging_days": 15, "billable": true, "requirement_deadline": "2026-05-15"},
+    {"submission_id": "SUB004", "req_id": "REQ003", "req_title": "DevOps Engineer", "account_name": "MARVELL", "candidate_name": "Sara Wilson", "submission_status": "Submitted", "recruiter_name": "Carol Singh", "aging_days": 5, "billable": false, "requirement_deadline": "2026-05-25"},
+    {"submission_id": "SUB005", "req_id": "REQ006", "req_title": "ML Engineer", "account_name": "Sephora", "candidate_name": "Tom Brown", "submission_status": "CAN - Interview No-show", "recruiter_name": "Alice Chen", "aging_days": 19, "billable": true, "requirement_deadline": "2026-05-20"},
+    {"submission_id": "SUB006", "req_id": "REQ007", "req_title": "Backend Engineer", "account_name": "Penumbra", "candidate_name": "Lisa Park", "submission_status": "Hold", "recruiter_name": "Bob Kumar", "aging_days": 43, "billable": true, "requirement_deadline": "2026-04-30"},
+    {"submission_id": "SUB007", "req_id": "REQ001", "req_title": "Senior AI Engineer", "account_name": "Sephora", "candidate_name": "Ryan Zhang", "submission_status": "CAN - Interview No-show", "recruiter_name": "Alice Chen", "aging_days": 8, "billable": true, "requirement_deadline": "2026-05-30"},
+    {"submission_id": "SUB008", "req_id": "REQ003", "req_title": "DevOps Engineer", "account_name": "MARVELL", "candidate_name": "Amy Davis", "submission_status": "QA - Candidate out of Budget", "recruiter_name": "Carol Singh", "aging_days": 7, "billable": false, "requirement_deadline": "2026-05-25"}
+  ],
+  "interview_breakdown": [
+    {"interview_id": "INT001", "submission_id": "SUB001", "req_id": "REQ001", "account_name": "Sephora", "candidate_name": "John Doe", "recruiter_name": "Alice Chen", "round_number": 1, "interview_type": "Phone Screen", "interview_status": "No-show", "outcome": "Cancelled"},
+    {"interview_id": "INT002", "submission_id": "SUB002", "req_id": "REQ002", "account_name": "Penumbra", "candidate_name": "Jane Smith", "recruiter_name": "Bob Kumar", "round_number": 1, "interview_type": "Technical", "interview_status": "Completed", "outcome": "Rejected"},
+    {"interview_id": "INT003", "submission_id": "SUB005", "req_id": "REQ006", "account_name": "Sephora", "candidate_name": "Tom Brown", "recruiter_name": "Alice Chen", "round_number": 1, "interview_type": "Phone Screen", "interview_status": "No-show", "outcome": "Cancelled"},
+    {"interview_id": "INT004", "submission_id": "SUB007", "req_id": "REQ001", "account_name": "Sephora", "candidate_name": "Ryan Zhang", "recruiter_name": "Alice Chen", "round_number": 1, "interview_type": "Phone Screen", "interview_status": "No-show", "outcome": "Cancelled"},
+    {"interview_id": "INT005", "submission_id": "SUB004", "req_id": "REQ003", "account_name": "MARVELL", "candidate_name": "Sara Wilson", "recruiter_name": "Carol Singh", "round_number": 1, "interview_type": "Technical", "interview_status": "Scheduled", "outcome": null},
+    {"interview_id": "INT006", "submission_id": "SUB006", "req_id": "REQ007", "account_name": "Penumbra", "candidate_name": "Lisa Park", "recruiter_name": "Bob Kumar", "round_number": 2, "interview_type": "Technical", "interview_status": "Completed", "outcome": "Rejected"}
+  ],
+  "rejection_feedback": [
+    {"req_id": "REQ002", "account_name": "Penumbra", "candidate_name": "Jane Smith", "recruiter_name": "Bob Kumar", "rejection_reason": "TECH - Rejected after Phone Interview", "reject_comments": "Did not meet technical bar", "recruiter_rejection_count": 4},
+    {"req_id": "REQ007", "account_name": "Penumbra", "candidate_name": "Lisa Park", "recruiter_name": "Bob Kumar", "rejection_reason": "TECH - Rejected after Phone Interview", "reject_comments": "Communication skills gap", "recruiter_rejection_count": 4},
+    {"req_id": "REQ003", "account_name": "MARVELL", "candidate_name": "Amy Davis", "recruiter_name": "Carol Singh", "rejection_reason": "QA - Candidate out of Budget", "reject_comments": "Expected 30% above budget", "recruiter_rejection_count": 3},
+    {"req_id": "REQ001", "account_name": "Sephora", "candidate_name": "John Doe", "recruiter_name": "Alice Chen", "rejection_reason": "CAN - Interview No-show", "reject_comments": "", "recruiter_rejection_count": 3},
+    {"req_id": "REQ006", "account_name": "Sephora", "candidate_name": "Tom Brown", "recruiter_name": "Alice Chen", "rejection_reason": "CAN - Interview No-show", "reject_comments": "", "recruiter_rejection_count": 3}
+  ]
+}

@@ -1,0 +1,72 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+*.pyc
+
+# ── Node / Next.js ───────────────────────────────────────────────────────────
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+frontend/dist/
+.npm/
+.pnpm-store/
+
+# ── Environment & Secrets ────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# ── IDEs & Editors ───────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+*.suo
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+*.log.*
+
+# ── Database ─────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Test / Debug scripts ─────────────────────────────────────────────────────
+debug_pipeline.py
+inspect_lookups.py
+inspect_schema.py
+setup_db.py
+test_queries.py
+
+# ── Coverage & Mypy ──────────────────────────────────────────────────────────
+.coverage
+.mypy_cache/
+.pytest_cache/
+htmlcov/
+.ruff_cache/
+
+# ── Docker ───────────────────────────────────────────────────────────────────
+docker/postgres-data/
+
+# ── OS artefacts ─────────────────────────────────────────────────────────────
+desktop.ini
